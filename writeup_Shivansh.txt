@@ -1,0 +1,15 @@
+To classify the emotions of an author from a tweet is a major application of Natural Language Processing (NLP) classified as Sentiment Analysis and it helps to find the mood of the majority of the people by their tweets. The research paper I approached for solving this problem was entitled “Study of Twitter Sentiment Analysis using Machine Learning Algorithms on Python” (https://www.ijcaonline.org/archives/volume165/number9/gupta-2017-ijca-914022.pdf)
+
+In this problem the major issues that I faced were:
+1.	The data file is in .json format (javascript object notation) and it is difficult to process json file for me.
+2.	The extracted tweet_data has URLs also which is irrelevant during counting of most frequent words. 
+
+These two problems I faced and I resolve them one by one as follows:
+1.	I convert the json file to csv file and then read that locally saved csv file using pandas library as a dataframe and it would be easier for me to access a dataframe for further processing.
+2.	To remove the urls, I used pd.replace function of pandas library and replaced the urls to blank space, so that I can easily calculate the frequency of the most frequent words.
+
+The technique I used for solution of this problem was Sentiment Analysis using TextBlob function. The reason behind using this technique instead of all other available codes is:
+1.	Less complex code.
+2.	Time of execution is moderate.
+3.	Easy to implement.
+4.	Understandable.
